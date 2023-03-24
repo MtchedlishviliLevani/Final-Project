@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>Travel Agency</title>
+</head>
+<body>
+    <div class="photo">
+    <header>
+        <nav class="navbar container">
+        
+            <a href="index.html"><img class="logo" src="./assets/images/Home/logo.png" alt="logo"></a>
+            <div class="action-items">
+            <ul class="menu">
+                <li class="nav-link"><a href="#">Home</a></li>
+                <li class="nav-link"><a href="#">Events</a></li>
+                <li class="nav-link"><a href="#">Services</a></li>
+                <li class="nav-link"><a href="#">About</a></li>
+            </ul>
+            <div class="buttons-wrapper">
+                <button type="button" class="btn lgn"><a href="#">Login</a></button>
+                <button class="btn rgs"><a href="#">Register</a></button>
+            </div>
+        </div>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        </nav>
+    </header>
+    <section class="home container">
+        <div class="introduction">
+            <h1>”Life is short and the world is wide“</h1>
+            <!-- <h2>To get the best of your adventure you just need to leave and go where you like,
+                 we are waiting for you.</h2> -->
+        <button class="btn plan"><a href="">Plan a trip</a></button>
+        <div class="search-inp">
+            <form action="">
+                <div class="sear-wrapper">
+                    <input type="search" id="search" placeholder="Where do you want to go?">
+                
+                
+                <button type="submit" id="btn"><a href="">Search</a></button></div>
+            </form>
+        </div>
+        </div>
+        <div class="registration-login-forms">
+            <form class="login-form" action="">
+                <div class="login-main">
+                    <svg class="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="close"><path fill="#6563ff" d="M7 18a1 1 0 0 1-.707-1.707l10-10a1 1 0 0 1 1.414 1.414l-10 10A.997.997 0 0 1 7 18Z"></path><path fill="#6563ff" d="M17 18a.997.997 0 0 1-.707-.293l-10-10a1 1 0 0 1 1.414-1.414l10 10A1 1 0 0 1 17 18Z"></path></svg>
+                    <h3>Login</h3>
+                    <div class="email">
+                    <label for="Email">Email</label>
+                    <input type="text" placeholder="Type Your Email Address" name="Email">
+                    </div>
+                    <div class="pass">
+                    <label for="">Password</label>
+                    <input type="password" placeholder="Type Your Password">
+</div>
+                    <a class="frgt-pass" href="#">Forget password?</a>
+                    <button class="btn lgn-btn" type="submit">Login</button>
+                </div>
+            </form>
+            <form class="register-form" action="">
+                <div class="register-main">
+                    <svg class="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="close"><path fill="#6563ff" d="M7 18a1 1 0 0 1-.707-1.707l10-10a1 1 0 0 1 1.414 1.414l-10 10A.997.997 0 0 1 7 18Z"></path><path fill="#6563ff" d="M17 18a.997.997 0 0 1-.707-.293l-10-10a1 1 0 0 1 1.414-1.414l10 10A1 1 0 0 1 17 18Z"></path></svg>
+                    <h3>Register</h3>
+                    <div class="fname">
+                        <label for="fname">Full Name</label>
+                        <input type="text" placeholder="Type Your Full Name" name="fname">
+                    </div>
+                    <div class="email">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Type Your Email Address" name="email">
+                    </div>
+                    <div class="creaPass">
+                        <label for="Password">Password</label>
+                        <input type="password" placeholder="Create Password" name="Password">
+                    </div>
+                    <button class="btn rgs-btn">Register</button>
+                </div>
+            </form>
+        </div>
+    </section></div>
+       <script src="./assets/js/app.js"></script>
+</body>
+</html>
