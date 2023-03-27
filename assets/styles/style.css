@@ -4,6 +4,7 @@
 
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 :root{--primary-color:rgba(256, 256, 256, 1);
@@ -25,16 +26,19 @@ html{
     --nav-hov-col:rgba(rgb(0, 0, 0));
     --pln-btn-col:dimgray;
     --label-fs:2rem;
-    --login-inpt-plc-holder-fs:1.6rem
+    --login-inpt-plc-holder-fs:1.6rem;
+    --service-bckgr-cl:beige;
+    --service-text-vr-photo-fm:'Kalam', cursive;
+    --foter-bck-col:rgba(204,113,82,1);
     
 }
-
-.photo{
-    background-image: url(../images/Home/background.jpg);
+#home{
+  background-image: url(../images/Home/background.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
+    background-attachment: fixed;
 }
 
 .container{
@@ -315,10 +319,10 @@ display: block;
   }
 
   .login-main h3, .register-main h3{
-         font-size: var(--h3-fs);
-         color: #f34079;
-         font-family: var(--main-ff);
-         text-align: center;
+   font-size: var(--h3-fs);
+   color: #f34079;
+   font-family: var(--main-ff);
+   text-align: center;
   }
 
   .frgt-pass{
@@ -335,6 +339,399 @@ display: block;
     background-image: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%);
   }
 
+  /* Tours */
+
+.tours{
+  padding: 13rem 0 13rem 0;
+}
+
+
+.tours h2, h3{
+  font-family: var(--main-ff);
+  text-align: center;
+}
+
+.tours h2{
+  font-size: var(--h2-fs);
+}
+
+.tours h3{
+  font-size: var(--h3-fs);
+  margin:3rem 0;
+  color: navy;
+}
+
+.card-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 5rem;
+  column-gap: 3rem;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: var(--btn-brd-rad);
+}
+
+.card  > img{
+  width: 100%;
+  transition: filter 1s ease;
+  
+}
+
+.card:hover > img{
+  filter: grayscale(100%);
+}
+
+.card-abs h2:before{
+  content:url(../images/Tours/location-icon.svg);
+  vertical-align: middle;
+  margin-right: 3rem;
+}
+
+.card-abs{
+  position: absolute;
+  left: 17%;
+  top: 15%;
+}
+
+.card-abs h2{
+  font-family: var(--h1-ff);
+  font-size: var(--h2-fs);
+  color: magenta;
+  font-weight: 900;
+}
+
+.card-info{
+  padding:1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.4rem;
+  background-color: deepskyblue;
+  color: var(--primary-color);
+}
+
+
+.card-title, .card-text-cont{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-title h5{
+  font-family: var(--main-ff);
+  font-size: 1.8rem;
+}
+.card-text-cont span{
+  font-family: var(--main-ff);
+  font-size: 1.4rem;
+}
+
+.view-more{
+     background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%);
+margin: 0 auto;
+margin-top: 5rem;
+    display: block;  
+  border: none; 
+  border-radius: .4rem; 
+  }
+
+.view-more a{
+  color: var(--black-col);
+}
+
+  .view-more:hover > a {
+    background-position: right center; 
+    color: var(--primary-color);
+    transition: 1s;
+  }
+
+.b-deal{
+  margin-top: 5rem;
+  background: url(../images/Tours/oberstdorf.jpg);
+  width: 100%;
+  height: 50vh;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.b-deal h2{
+  font-family: var(--main-ff);
+  font-size: var(--h2-fs);
+  color:var(--primary-color);
+  padding-top: 3rem;
+  font-weight: 900;
+  padding-bottom: 3rem;
+}
+
+.b-deal h3{
+  font-family: var(--main-ff);
+  text-align: left;
+  color: var(--primary-color);
+  
+  
+}
+
+.b-deal button{
+  border: none;
+  margin-top: 3rem;
+  background: deepskyblue;
+  border-radius: .4rem;
+}
+
+.b-deal button a{
+  color: var(--primary-color);
+}
+
+.b-deal span{
+  font-family: var(--main-ff);
+  font-size: 5rem;
+  font-weight: 900;color: deepskyblue;
+  
+}
+
+
+
+/* Services */
+
+.service-section{
+  background-color: var(--service-bckgr-cl);
+  padding: 13rem 0;
+}
+
+
+.service-wrapper{
+  margin-top:10rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3.5rem;
+}
+
+.serv-img-parent{
+  position: relative;
+}
+
+.serv-img{
+  width: 100%;
+  height: 100%;
+  border-radius: var(--btn-brd-rad);
+}
+
+.service-section h2{
+text-align: center;
+font-size: var(--h2-fs);
+font-family: var(--main-ff);
+}
+
+.service-section .container > h3{
+  font-size: 2rem;
+  font-family: var(--main-ff);
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.service{
+  position:relative;
+}
+
+.service h3{text-align: center;
+  font-size: var(--h3-fs);
+  font-family: var(--h1-ff);
+  color: var(--primary-color);
+  position: absolute;
+  bottom: 6%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.service p{
+  font-family: var(--service-text-vr-photo-fm);
+  font-size: 2.4rem;
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  width: 80%;
+  color: var(--primary-color);
+  color: black;
+  transform: translateX(-50%);
+  line-height: 2.8rem;
+  opacity: 0;
+  color: aliceblue;
+  text-align: center;
+}
+
+.service:hover p{
+opacity: 1;
+transition: 1.5s;
+
+}
+
+
+/* ABOUT */
+
+.about-section{
+  padding: 6rem 0;
+}
+
+.about-main{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5.5rem;
+  background-color: rgba(202, 248, 128, 0);
+}
+
+.about-photo > img{
+  width: 100%;
+}
+
+.about-text-content h2 {
+  font-family: var(--main-ff);
+  color: rgba(204,113,82,1);
+  font-size: var(--h2-fs);
+  font-weight: 600;
+  line-height: 3.5rem;
+  text-align: center;
+  width:70%
+
+}
+
+.about-text-content p{
+  font-family: var(--main-ff);
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+  width:70%;
+  margin-bottom: 7rem;
+}
+
+.line{
+  width: 80%;
+  height: .2rem;
+  margin: 1.5rem 0 3.5rem 0;
+  background-color: darkolivegreen;
+}
+
+.abt-btn{
+  background-color: rgba(204,113,82,1);
+  border: none;
+  
+}
+.abt-btn a{
+color: var(--primary-color);
+}
+
+.abt-btn:hover> a{
+  color: var(--black-col);
+  transition: 1.1s;
+}
+
+/* Footer */
+
+
+footer{padding: 4rem 0;
+  background:deepskyblue;
+
+}
+
+.footer-wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.left-side{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.left-side h2{
+  font-family: var(--main-ff);
+  font-size: var(--h2-fs);
+  color: var(--primary-color);
+}
+
+.left-side h4{
+  font-family: var(--main-ff);
+  font-size: 2.1rem;
+  color: var(--primary-color);
+}
+
+.social-icons-wrapper{
+  display: flex;
+  column-gap: 2rem;
+  margin-top: 1rem;
+}
+
+.social-icons-wrapper svg:hover  path{
+  fill: var(--black-col);
+}
+
+.middle{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer-nav h4{
+  font-family: var(--main-ff);
+  color: var(--primary-color);
+  font-size: 2.1rem;
+  
+}
+
+.footer-nav{
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+
+.footer-nav div{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.app svg{
+  width: 10rem;
+  height: 8rem;
+}
+
+.footer-nav li a{
+  font-family: var(--main-ff);
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.app h4{
+  font-family: var(--main-ff);
+  color: var(--primary-color);
+  font-size: 2.1rem;
+  margin-bottom: 3rem;
+}
+
+.right{
+  justify-self:center ;
+}
+
+.right h4{
+  font-family: var(--main-ff);
+  color: var(--primary-color);
+  font-size: 2.1rem;
+}
+
+.right ul{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.right ul li a{
+  font-family: var(--main-ff);
+  color: var(--primary-color);
+  font-size: 1.9rem;
+}
 
 
 
