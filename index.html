@@ -1,161 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Welcome to Explore the World, your one-stop travel agency for unforgettable adventures around the globe. Our website offers a variety of tours and packages to explore the most beautiful destinations in the world.">
+    <meta name="keywords" content="Explore The World, Travel Agency, Travel, Cheap Travel, Cheap travel tour, Tourism">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="EN">
+    <meta name="author" content="Levan Mtchedlishvili">
+    <!-- <meta http-equiv="refresh" content="30"> -->
+    <meta property="og:url" content="https://mtchedlishvililevani.github.io/Final-Project/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Explore The World">
+    <meta property="og:description"
+        content="Welcome to Explore the World, your one-stop travel agency for unforgettable adventures around the globe. Our website offers a variety of tours and packages to explore the most beautiful destinations in the world.">
+    <meta property="og:image" content="https://i.ibb.co/LNZSyc6/logo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="800">
     <link rel="stylesheet" href="./assets/styles/reset.css">
     <link rel="stylesheet" href="./assets/styles/style.css">
-    <title>Travel Agency</title>
+    <link rel="shortcut icon" href="./assets/images/Home/logo.png">
+    <title>Explore The World</title>
 </head>
+
 <body>
     <section id="home">
-    <header>
-        <nav class="navbar container">
-            <a href="index.html"><img class="logo" src="./assets/images/Home/logo.png" alt="logo"></a>
-            <div class="action-items">
-            <ul class="menu">
-                <li class="nav-link"><a href="#home">Home</a></li>
-                <li class="nav-link"><a href="#tours">Tours</a></li>
-                <li class="nav-link"><a href="#service">Services</a></li>
-                <li class="nav-link"><a href="#about">About</a></li>
-            </ul>
-            <div class="buttons-wrapper">
-                <button type="button" class="btn lgn"><a href="#">Login</a></button>
-                <button class="btn rgs"><a href="#">Register</a></button>
-            </div>
-        </div>
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-        </nav>
-    </header>
-    <section class="home container">
-        <div class="introduction">
-            <h1>”Life is short and the world is wide“</h1>
-        <button type="button" class="btn plan"><a href="">Plan a trip</a></button>
-        <div class="search-inp">
-            <form action="">
-                <div class="sear-wrapper">
-                    <input type="search" id="search" placeholder="Where do you want to go?">
-                
-                <button type="submit" id="btn"><a href="">Search</a></button></div>
-            </form>
-        </div>
-        <div class="registration-login-forms">
-            <form class="login-form" action="">
-                <div class="login-main">
-                    <svg class="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="close"><path fill="#6563ff" d="M7 18a1 1 0 0 1-.707-1.707l10-10a1 1 0 0 1 1.414 1.414l-10 10A.997.997 0 0 1 7 18Z"></path><path fill="#6563ff" d="M17 18a.997.997 0 0 1-.707-.293l-10-10a1 1 0 0 1 1.414-1.414l10 10A1 1 0 0 1 17 18Z"></path></svg>
-                    <h3>Login</h3>
-                    <div class="email">
-                    <label for="Email">Email</label>
-                    <input type="text" placeholder="Type Your Email Address" name="Email">
+        <header>
+            <nav class="navbar container">
+                <a href="index.html"><img class="logo" src="./assets/images/Home/logo.png" alt="logo"></a>
+                <div class="action-items">
+                    <ul class="menu">
+                        <li class="nav-link"><a href="#home">Home</a></li>
+                        <li class="nav-link"><a href="#tours">Tours</a></li>
+                        <li class="nav-link"><a href="#service">Services</a></li>
+                        <li class="nav-link"><a href="#about">About</a></li>
+                    </ul>
+                    <div class="buttons-wrapper">
+                        <button type="button" class="btn lgn"><a href="#">Login</a></button>
+                        <button type="button" class="btn rgs"><a href="#">Register</a></button>
                     </div>
-                    <div class="pass">
-                    <label for="">Password</label>
-                    <input type="password" placeholder="Type Your Password">
-</div>
-                    <a class="frgt-pass" href="#">Forget password?</a>
-                    <button class="btn lgn-btn" type="submit">Login</button>
                 </div>
-            </form>
-            <form class="register-form" action="">
-                <div class="register-main">
-                    <svg class="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="close"><path fill="#6563ff" d="M7 18a1 1 0 0 1-.707-1.707l10-10a1 1 0 0 1 1.414 1.414l-10 10A.997.997 0 0 1 7 18Z"></path><path fill="#6563ff" d="M17 18a.997.997 0 0 1-.707-.293l-10-10a1 1 0 0 1 1.414-1.414l10 10A1 1 0 0 1 17 18Z"></path></svg>
-                    <h3>Register</h3>
-                    <div class="fname">
-                        <label for="fname">Full Name</label>
-                        <input type="text" placeholder="Type Your Full Name" name="fname">
-                    </div>
-                    <div class="email">
-                        <label for="email">Email</label>
-                        <input type="email" placeholder="Type Your Email Address" name="email">
-                    </div>
-                    <div class="creaPass">
-                        <label for="Password">Password</label>
-                        <input type="password" placeholder="Create Password" name="Password">
-                    </div>
-                    <button class="btn rgs-btn">Register</button>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                 </div>
-            </form>
+            </nav>
+        </header>
+        <div class="home container">
+            <div class="introduction">
+                <h1>”Life is short and the world is wide“</h1>
+                <button type="button" class="btn plan"><a href="#tours">Plan a trip</a></button>
+                <div class="search-inp">
+                    <form action="">
+                        <div class="sear-wrapper">
+                            <input type="search" id="search" placeholder="Where do you want to go?">
+
+                            <button type="submit" id="btn"><a href="#">Search</a></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="registration-login-forms">
+                    <form class="login-form" action="">
+                        <div class="login-main">
+                            <svg class="close-lgn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path fill="#6563ff"
+                                    d="M7 18a1 1 0 0 1-.707-1.707l10-10a1 1 0 0 1 1.414 1.414l-10 10A.997.997 0 0 1 7 18Z">
+                                </path>
+                                <path fill="#6563ff"
+                                    d="M17 18a.997.997 0 0 1-.707-.293l-10-10a1 1 0 0 1 1.414-1.414l10 10A1 1 0 0 1 17 18Z">
+                                </path>
+                            </svg>
+                            <h3>Login</h3>
+                            <div class="email">
+                                <label for="Email">Email</label>
+                                <input type="text" placeholder="Type Your Email Address" name="Email" id="Email">
+                            </div>
+                            <div class="pass">
+                                <label for="password">Password</label>
+                                <input type="password" placeholder="Type Your Password" id="password">
+                            </div>
+                            <a class="frgt-pass" href="#">Forget password?</a>
+                            <button class="btn lgn-btn" type="submit">Login</button>
+                        </div>
+                    </form>
+                    <form class="register-form" action="">
+                        <div class="register-main">
+                            <svg class="close-rgs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path fill="#6563ff"
+                                    d="M7 18a1 1 0 0 1-.707-1.707l10-10a1 1 0 0 1 1.414 1.414l-10 10A.997.997 0 0 1 7 18Z">
+                                </path>
+                                <path fill="#6563ff"
+                                    d="M17 18a.997.997 0 0 1-.707-.293l-10-10a1 1 0 0 1 1.414-1.414l10 10A1 1 0 0 1 17 18Z">
+                                </path>
+                            </svg>
+                            <h3>Register</h3>
+                            <div class="fname">
+                                <label for="fname">Full Name</label>
+                                <input type="text" placeholder="Type Your Full Name" id="fname" name="fname">
+                            </div>
+                            <div class="email">
+                                <label for="email">Email</label>
+                                <input type="email" placeholder="Type Your Email Address" name="email" id="email">
+                            </div>
+                            <div class="creaPass">
+                                <label for="Password">Password</label>
+                                <input type="password" placeholder="Create Password" name="Password" id="Password">
+                            </div>
+                            <button type="submit" class="btn rgs-btn">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
-</div>
-
-</section>
-<section class="tours" id="tours">
-    <div class="container">
-
-    <h2>Tours</h2>
-    <h3>Active Travel Tour Deals</h3>
-    
-    <div class="card-wrapper">
-        
-        <div class="card"><img src="./assets/images/Tours/Banff-national-park-Canada.png" alt="banf-national-park"><div class="card-info"><div class="card-title"><h5>Tour length</h5> <h5>Price</h5></div><div class="card-text-cont"><span>10 days</span><span>2400$</span></div></div><div class="card-abs"><h2>Canada</h2></div></div>
-        <div class="card"><img src="./assets/images/Tours/raja-ampat.png" alt="raja-ampat"><div class="card-info"><div class="card-title"><h5>Tour length</h5> <h5>Price</h5></div><div class="card-text-cont"><span>6 days</span><span>2000$</span></div></div><div class="card-abs"><h2>Indonesia</h2></div></div>
-        <div class="card"><img src="./assets/images/Tours/Palawan.png" alt="palawan"><div class="card-info"><div class="card-title"><h5>Tour length</h5> <h5>Price</h5></div><div class="card-text-cont"><span>14 days</span><span>5000$</span></div></div><div class="card-abs"><h2>Philippines</h2></div></div>
-        <div class="card"><img src="./assets/images/Tours/caucasus-mountains.png" alt="caucasus-mountains"><div class="card-info"><div class="card-title"><h5>Tour length</h5> <h5>Price</h5></div><div class="card-text-cont"><span>8 days</span><span>1600$</span></div></div><div class="card-abs"><h2>Georgia</h2></div></div>
-        <div class="card"><img src="./assets/images/Tours/Machu-Picchu.png" alt="Machu-Picchu"><div class="card-info"><div class="card-title"><h5>Tour length</h5> <h5>Price</h5></div><div class="card-text-cont"><span>9 days</span><span>3400$</span></div></div><div class="card-abs"><h2>Peru</h2></div></div>
-        <div class="card"><img src="./assets/images/Tours/Zakynthos-Greece.png" alt="Zakynthos-Greece"><div class="card-info"><div class="card-title"><h5>Tour length</h5> <h5>Price</h5></div><div class="card-text-cont"><span>10 days</span><span>3100$</span></div></div><div class="card-abs"><h2>Greece</h2></div></div>
-    </div>
-  <button class="btn view-more"><a href="#">View More</a></button>
-</div>
-</div>
-<div class="b-deal">
-    <div class="deal-inner container">
-        <h2>Deal Of The Month</h2><span>45% OFF Sale  in Oberstdorf</span>
-        <h3>Just hurry up limited offer!</h3>
-        
-        
-        <p></p>
-        <button class="btn book"><a href="#">BooK Now</a></button>
-    </div>
-    
-</div>
-
-</section>
-
-    <section class="service-section" id="service">
-        <div class="container">
-        <h2>OUR SERVICES</h2>
-        <h3>YOUR KIND OF TRAVEL</h3>
-        <div class="service-wrapper">
-<div class="service">
-  <div class="serv-img-parent"><img class="serv-img" src="./assets/images/Service/solo-adventure.jpeg" alt=""><h3>SOLO ADVENTURES</h3></div>
-    <p>We believe that independent travel can create a unique level of connection with the world. From brief getaways to lengthy sabbaticals, we are able to curate perfect trip for one!
-    </p>
-</div>
-<div class="service">
- <div class="serv-img-parent">   <img class="serv-img" src="./assets/images/Service/group-travel.jpg" alt=""><h3>GROUP TOURS</h3></div>
-    <p>Navigating group travel takes organization and communication... two things that we happen to specialize in!
-        Our goal is to fully understand what each traveler wants out of their trip, and allow everyone (regardless of group size) to enjoy their perfect vacation.
-    </p>
-</div>
-<div class="service">
-    <div class="serv-img-parent">    <img class="serv-img" src="./assets/images/Service/culture-travel.jpeg" alt=""><h3>CULTURE TRAVEL</h3></div>
-    <p>Traveling to different parts of the world exposes you to new cultures and ways of life. This exposure can broaden your horizons and help you understand and appreciate different customs and traditions. Our team will do everything to make the trip both enjoyable and educational.
-    </p>
-</div>
-        </div>
-</div>
-    </section>
-    <section class="about-section" id="about">
-        <div class="container">
-        <div class="about-main">
-            <div class="about-photo">
-                <img src="./assets/images/About/camel-ride-and-carpet.PNG" alt="">
+    <main>
+        <section class="tours" id="tours">
+            <div class="container">
+                <h2>Tours</h2>
+                <h3>Planed Travel Tours</h3>
+                <div class="card-wrapper">
+                    <div class="card"><img src="./assets/images/Tours/Banff-national-park-Canada.png"
+                            alt="banf-national-park">
+                        <div class="card-info">
+                            <div class="card-title">
+                                <h5>Tour length</h5>
+                                <h5>Price</h5>
+                            </div>
+                            <div class="card-text-cont"><span>10 days</span><span>2400$</span></div>
+                        </div>
+                        <div class="card-abs">
+                            <h2>Canada</h2>
+                        </div>
+                    </div>
+                    <div class="card"><img src="./assets/images/Tours/raja-ampat.png" alt="raja-ampat">
+                        <div class="card-info">
+                            <div class="card-title">
+                                <h5>Tour length</h5>
+                                <h5>Price</h5>
+                            </div>
+                            <div class="card-text-cont"><span>6 days</span><span>2000$</span></div>
+                        </div>
+                        <div class="card-abs">
+                            <h2>Indonesia</h2>
+                        </div>
+                    </div>
+                    <div class="card"><img src="./assets/images/Tours/Palawan.png" alt="palawan">
+                        <div class="card-info">
+                            <div class="card-title">
+                                <h5>Tour length</h5>
+                                <h5>Price</h5>
+                            </div>
+                            <div class="card-text-cont"><span>14 days</span><span>5000$</span></div>
+                        </div>
+                        <div class="card-abs">
+                            <h2>Philippines</h2>
+                        </div>
+                    </div>
+                    <div class="card"><img src="./assets/images/Tours/caucasus-mountains.png" alt="caucasus-mountains">
+                        <div class="card-info">
+                            <div class="card-title">
+                                <h5>Tour length</h5>
+                                <h5>Price</h5>
+                            </div>
+                            <div class="card-text-cont"><span>8 days</span><span>1600$</span></div>
+                        </div>
+                        <div class="card-abs">
+                            <h2>Georgia</h2>
+                        </div>
+                    </div>
+                    <div class="card"><img src="./assets/images/Tours/Machu-Picchu.png" alt="Machu-Picchu">
+                        <div class="card-info">
+                            <div class="card-title">
+                                <h5>Tour length</h5>
+                                <h5>Price</h5>
+                            </div>
+                            <div class="card-text-cont"><span>9 days</span><span>3400$</span></div>
+                        </div>
+                        <div class="card-abs">
+                            <h2>Peru</h2>
+                        </div>
+                    </div>
+                    <div class="card"><img src="./assets/images/Tours/Zakynthos-Greece.png" alt="Zakynthos-Greece">
+                        <div class="card-info">
+                            <div class="card-title">
+                                <h5>Tour length</h5>
+                                <h5>Price</h5>
+                            </div>
+                            <div class="card-text-cont"><span>10 days</span><span>3100$</span></div>
+                        </div>
+                        <div class="card-abs">
+                            <h2>Greece</h2>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn view-more"><a href="#">View More</a></button>
             </div>
-            <div class="about-text-content">
-                <h2>EXPLORE THE WORLD  TRAVEL WAS FOUNDED IN 2015</h2>
-                <div class="line"></div>
-                <p>To provide a modernized solution to travel planning. Our philosophy is that travel isn’t only about seeing a destination, but it is about feeling the culture. We focus on experiential travel, allowing you to fully immerse yourself into your chosen destination.
-                </p>
-                <button type="button" class="btn abt-btn"><a href="#">Learn more</a></button>
             </div>
-       </div>
-    </section>
+            <div class="b-deal">
+                <div class="deal-inner container">
+                    <h2>Deal Of The Month</h2><span>45% OFF Sale in Oberstdorf</span>
+                    <h3>Just hurry up limited offer!</h3>
+                    <button type="button" class="btn book"><a href="#">BooK Now</a></button>
+                </div>
+            </div>
+        </section>
+        <section class="service-section" id="service">
+            <div class="container">
+                <h2>OUR SERVICES</h2>
+                <h3>YOUR KIND OF TRAVEL</h3>
+                <div class="service-wrapper">
+                    <div class="service">
+                        <div class="serv-img-parent"><img class="serv-img"
+                                src="./assets/images/Service/solo-adventure.jpeg"
+                                alt="a girl travelling in the desert ">
+                            <h3>SOLO ADVENTURES</h3>
+                        </div>
+                        <p>We believe that independent travel can create a unique level of connection with the world.
+                            From
+                            brief getaways to lengthy sabbaticals, we are able to curate perfect trip for one!
+                        </p>
+                    </div>
+                    <div class="service">
+                        <div class="serv-img-parent"> <img class="serv-img"
+                                src="./assets/images/Service/group-travel.jpg" alt="People are at sea and having fun">
+                            <h3>GROUP TOURS</h3>
+                        </div>
+                        <p>Navigating group travel takes organization and communication... two things that we happen to
+                            specialize in!
+                            Our goal is to fully understand what each traveler wants out of their trip, and allow
+                            everyone
+                            (regardless of group size) to enjoy their perfect vacation.
+                        </p>
+                    </div>
+                    <div class="service">
+                        <div class="serv-img-parent"> <img class="serv-img"
+                                src="./assets/images/Service/culture-travel.jpeg" alt="Petra - City of Jordan">
+                            <h3>CULTURE TRAVEL</h3>
+                        </div>
+                        <p>Traveling to different parts of the world exposes you to new cultures and ways of life. This
+                            exposure can broaden your horizons and help you understand and appreciate different customs
+                            and
+                            traditions. Our team will do everything to make the trip both enjoyable and educational.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="about-main">
+                    <div class="about-photo">
+                        <img src="./assets/images/About/camel-ride-and-carpet.PNG"
+                            alt="there are two picture camel and carpet picture">
+                    </div>
+                    <div class="about-text-content">
+                        <h2>EXPLORE THE WORLD TRAVEL WAS FOUNDED IN 2015</h2>
+                        <div class="line"></div>
+                        <p>To provide a modernized solution to travel planning. Our philosophy is that travel isn’t only
+                            about seeing a destination, but it is about feeling the culture. We focus on experiential
+                            travel, allowing you to fully immerse yourself into your chosen destination.
+                        </p>
+                        <button type="button" class="btn abt-btn"><a href="#">Learn more</a></button>
+                    </div>
+                </div>
+        </section>
+    </main>
     <footer>
         <div class="container">
             <div class="footer-wrapper">
@@ -163,38 +276,122 @@
                     <h2>EXPLORE THE WORLD</h2>
                     <h4>JOIN OUR SOCIAL COMMUNITY</h4>
                     <div class="social-icons-wrapper">
-                     <a href="https://www.facebook.com/">  <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0Z" fill="#FFF"/></svg></a>
-                     <a href="https://www.instagram.com/">   <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.975 1.409 4.099 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.057 4.042-.124 2.687-1.387 3.975-4.1 4.099-1.054.048-1.37.058-4.041.058-2.67 0-2.987-.01-4.04-.058-2.718-.124-3.977-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058ZM10 0C7.284 0 6.944.012 5.877.06 2.246.227.227 2.242.061 5.877.01 6.944 0 7.284 0 10s.012 3.057.06 4.123c.167 3.632 2.182 5.65 5.817 5.817 1.067.048 1.407.06 4.123.06s3.057-.012 4.123-.06c3.629-.167 5.652-2.182 5.816-5.817.05-1.066.061-1.407.061-4.123s-.012-3.056-.06-4.122C19.777 2.249 17.76.228 14.124.06 13.057.01 12.716 0 10 0Zm0 4.865a5.135 5.135 0 1 0 0 10.27 5.135 5.135 0 0 0 0-10.27Zm0 8.468a3.333 3.333 0 1 1 0-6.666 3.333 3.333 0 0 1 0 6.666Zm5.338-9.87a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4Z" fill="#FFF"/></svg></a>
-                     <a href="https://twitter.com/">   <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20 2.172a8.192 8.192 0 0 1-2.357.646 4.11 4.11 0 0 0 1.805-2.27 8.22 8.22 0 0 1-2.606.996A4.096 4.096 0 0 0 13.847.248c-2.65 0-4.596 2.472-3.998 5.037A11.648 11.648 0 0 1 1.392 1a4.109 4.109 0 0 0 1.27 5.478 4.086 4.086 0 0 1-1.858-.513c-.045 1.9 1.318 3.679 3.291 4.075a4.113 4.113 0 0 1-1.853.07 4.106 4.106 0 0 0 3.833 2.849A8.25 8.25 0 0 1 0 14.658a11.616 11.616 0 0 0 6.29 1.843c7.618 0 11.923-6.434 11.663-12.205A8.354 8.354 0 0 0 20 2.172Z" fill="#FFF"/></svg></a>
-                        
+                        <a href="https://www.facebook.com/"> <svg width="20" height="20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0Z"
+                                    fill="#FFF" />
+                            </svg></a>
+                        <a href="https://www.instagram.com/"> <svg width="20" height="20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.975 1.409 4.099 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.057 4.042-.124 2.687-1.387 3.975-4.1 4.099-1.054.048-1.37.058-4.041.058-2.67 0-2.987-.01-4.04-.058-2.718-.124-3.977-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058ZM10 0C7.284 0 6.944.012 5.877.06 2.246.227.227 2.242.061 5.877.01 6.944 0 7.284 0 10s.012 3.057.06 4.123c.167 3.632 2.182 5.65 5.817 5.817 1.067.048 1.407.06 4.123.06s3.057-.012 4.123-.06c3.629-.167 5.652-2.182 5.816-5.817.05-1.066.061-1.407.061-4.123s-.012-3.056-.06-4.122C19.777 2.249 17.76.228 14.124.06 13.057.01 12.716 0 10 0Zm0 4.865a5.135 5.135 0 1 0 0 10.27 5.135 5.135 0 0 0 0-10.27Zm0 8.468a3.333 3.333 0 1 1 0-6.666 3.333 3.333 0 0 1 0 6.666Zm5.338-9.87a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4Z"
+                                    fill="#FFF" />
+                            </svg></a>
+                        <a href="https://twitter.com/"> <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20 2.172a8.192 8.192 0 0 1-2.357.646 4.11 4.11 0 0 0 1.805-2.27 8.22 8.22 0 0 1-2.606.996A4.096 4.096 0 0 0 13.847.248c-2.65 0-4.596 2.472-3.998 5.037A11.648 11.648 0 0 1 1.392 1a4.109 4.109 0 0 0 1.27 5.478 4.086 4.086 0 0 1-1.858-.513c-.045 1.9 1.318 3.679 3.291 4.075a4.113 4.113 0 0 1-1.853.07 4.106 4.106 0 0 0 3.833 2.849A8.25 8.25 0 0 1 0 14.658a11.616 11.616 0 0 0 6.29 1.843c7.618 0 11.923-6.434 11.663-12.205A8.354 8.354 0 0 0 20 2.172Z"
+                                    fill="#FFF" />
+                            </svg></a>
                     </div>
                 </div>
                 <div class="middle">
-                    <ul class="footer-nav">
+                    <div class="footer-nav">
                         <h4>Menu</h4>
-                        <div>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#tours">Tours</a></li>
-                        <li><a href="#service">Services</a></li>
-                        <li><a href="#service">About</a></li></div>
-                    </ul>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#tours">Tours</a></li>
+                            <li><a href="#service">Services</a></li>
+                            <li><a href="#service">About</a></li>
+                        </ul>
+                    </div>
                     <div class="app">
                         <h4>Download Our App</h4>
-                     <a href="https://www.apple.com/ge/app-store/">   <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools --><svg fill="#000000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="241px" height="241px" viewBox="0 0 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"/><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/><g id="SVGRepo_iconCarrier"> <g id="7935ec95c421cee6d86eb22ecd114eed"> <path style="display: inline;" d="M248.644,123.476c-5.45-29.71,8.598-60.285,25.516-80.89 c18.645-22.735,50.642-40.17,77.986-42.086c4.619,31.149-8.093,61.498-24.826,82.965 C309.37,106.527,278.508,124.411,248.644,123.476z M409.034,231.131c8.461-23.606,25.223-44.845,51.227-59.175 c-26.278-32.792-63.173-51.83-97.99-51.83c-46.065,0-65.542,21.947-97.538,21.947c-32.96,0-57.965-21.947-97.866-21.947 c-39.127,0-80.776,23.848-107.19,64.577c-9.712,15.055-16.291,33.758-19.879,54.59c-9.956,58.439,4.916,134.557,49.279,202.144 c21.57,32.796,50.321,69.737,87.881,70.059c33.459,0.327,42.951-21.392,88.246-21.616c45.362-0.258,53.959,21.841,87.372,21.522 c37.571-0.317,67.906-41.199,89.476-73.991c15.359-23.532,21.167-35.418,33.11-62.023 C414.435,352.487,389.459,285.571,409.034,231.131z"> </path> </g> </g></svg></a>
-                     <a href="https://play.google.com/store/games?hl=en&gl=US">   <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools --><svg width="800px" height="800px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"/><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/><g id="SVGRepo_iconCarrier"> <mask id="mask0_87_8320" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="7" y="3" width="24" height="26"> <path d="M30.0484 14.4004C31.3172 15.0986 31.3172 16.9014 30.0484 17.5996L9.75627 28.7659C8.52052 29.4459 7 28.5634 7 27.1663L7 4.83374C7 3.43657 8.52052 2.55415 9.75627 3.23415L30.0484 14.4004Z" fill="#C4C4C4"/> </mask> <g mask="url(#mask0_87_8320)"> <path d="M7.63473 28.5466L20.2923 15.8179L7.84319 3.29883C7.34653 3.61721 7 4.1669 7 4.8339V27.1664C7 27.7355 7.25223 28.2191 7.63473 28.5466Z" fill="url(#paint0_linear_87_8320)"/> <path d="M30.048 14.4003C31.3169 15.0985 31.3169 16.9012 30.048 17.5994L24.9287 20.4165L20.292 15.8175L24.6923 11.4531L30.048 14.4003Z" fill="url(#paint1_linear_87_8320)"/> <path d="M24.9292 20.4168L20.2924 15.8179L7.63477 28.5466C8.19139 29.0232 9.02389 29.1691 9.75635 28.766L24.9292 20.4168Z" fill="url(#paint2_linear_87_8320)"/> <path d="M7.84277 3.29865L20.2919 15.8177L24.6922 11.4533L9.75583 3.23415C9.11003 2.87878 8.38646 2.95013 7.84277 3.29865Z" fill="url(#paint3_linear_87_8320)"/> </g> <defs> <linearGradient id="paint0_linear_87_8320" x1="15.6769" y1="10.874" x2="7.07106" y2="19.5506" gradientUnits="userSpaceOnUse"> <stop stop-color="#00C3FF"/> <stop offset="1" stop-color="#1BE2FA"/> </linearGradient> <linearGradient id="paint1_linear_87_8320" x1="20.292" y1="15.8176" x2="31.7381" y2="15.8176" gradientUnits="userSpaceOnUse"> <stop stop-color="#FFCE00"/> <stop offset="1" stop-color="#FFEA00"/> </linearGradient> <linearGradient id="paint2_linear_87_8320" x1="7.36932" y1="30.1004" x2="22.595" y2="17.8937" gradientUnits="userSpaceOnUse"> <stop stop-color="#DE2453"/> <stop offset="1" stop-color="#FE3944"/> </linearGradient> <linearGradient id="paint3_linear_87_8320" x1="8.10725" y1="1.90137" x2="22.5971" y2="13.7365" gradientUnits="userSpaceOnUse"> <stop stop-color="#11D574"/> <stop offset="1" stop-color="#01F176"/> </linearGradient> </defs> </g></svg></a>
+                        <div> <a href="https://www.apple.com/ge/app-store/">
+                                <!DOCTYPE svg
+                                    PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                                <svg fill="#000000" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="241px" height="241px"
+                                    viewBox="0 0 512 512" xml:space="preserve">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+                                    <g id="SVGRepo_iconCarrier">
+                                        <g id="7935ec95c421cee6d86eb22ecd114eed">
+                                            <path style="display: inline;"
+                                                d="M248.644,123.476c-5.45-29.71,8.598-60.285,25.516-80.89 c18.645-22.735,50.642-40.17,77.986-42.086c4.619,31.149-8.093,61.498-24.826,82.965 C309.37,106.527,278.508,124.411,248.644,123.476z M409.034,231.131c8.461-23.606,25.223-44.845,51.227-59.175 c-26.278-32.792-63.173-51.83-97.99-51.83c-46.065,0-65.542,21.947-97.538,21.947c-32.96,0-57.965-21.947-97.866-21.947 c-39.127,0-80.776,23.848-107.19,64.577c-9.712,15.055-16.291,33.758-19.879,54.59c-9.956,58.439,4.916,134.557,49.279,202.144 c21.57,32.796,50.321,69.737,87.881,70.059c33.459,0.327,42.951-21.392,88.246-21.616c45.362-0.258,53.959,21.841,87.372,21.522 c37.571-0.317,67.906-41.199,89.476-73.991c15.359-23.532,21.167-35.418,33.11-62.023 C414.435,352.487,389.459,285.571,409.034,231.131z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+                            <a href="https://play.google.com/store/games?hl=en&gl=US">
+                                <!DOCTYPE
+                                    svgPUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                                <svg width="800px" height="800px" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+                                    <g id="SVGRepo_iconCarrier">
+                                        <mask id="mask0_87_8320" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                            x="7" y="3" width="24" height="26">
+                                            <path
+                                                d="M30.0484 14.4004C31.3172 15.0986 31.3172 16.9014 30.0484 17.5996L9.75627 28.7659C8.52052 29.4459 7 28.5634 7 27.1663L7 4.83374C7 3.43657 8.52052 2.55415 9.75627 3.23415L30.0484 14.4004Z"
+                                                fill="#C4C4C4" />
+                                        </mask>
+                                        <g mask="url(#mask0_87_8320)">
+                                            <path
+                                                d="M7.63473 28.5466L20.2923 15.8179L7.84319 3.29883C7.34653 3.61721 7 4.1669 7 4.8339V27.1664C7 27.7355 7.25223 28.2191 7.63473 28.5466Z"
+                                                fill="url(#paint0_linear_87_8320)" />
+                                            <path
+                                                d="M30.048 14.4003C31.3169 15.0985 31.3169 16.9012 30.048 17.5994L24.9287 20.4165L20.292 15.8175L24.6923 11.4531L30.048 14.4003Z"
+                                                fill="url(#paint1_linear_87_8320)" />
+                                            <path
+                                                d="M24.9292 20.4168L20.2924 15.8179L7.63477 28.5466C8.19139 29.0232 9.02389 29.1691 9.75635 28.766L24.9292 20.4168Z"
+                                                fill="url(#paint2_linear_87_8320)" />
+                                            <path
+                                                d="M7.84277 3.29865L20.2919 15.8177L24.6922 11.4533L9.75583 3.23415C9.11003 2.87878 8.38646 2.95013 7.84277 3.29865Z"
+                                                fill="url(#paint3_linear_87_8320)" />
+                                        </g>
+                                        <defs>
+                                            <lineargradient id="paint0_linear_87_8320" x1="15.6769" y1="10.874"
+                                                x2="7.07106" y2="19.5506" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#00C3FF" />
+                                                <stop offset="1" stop-color="#1BE2FA" />
+                                            </lineargradient>
+                                            <lineargradient id="paint1_linear_87_8320" x1="20.292" y1="15.8176"
+                                                x2="31.7381" y2="15.8176" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#FFCE00" />
+                                                <stop offset="1" stop-color="#FFEA00" />
+                                            </lineargradient>
+                                            <lineargradient id="paint2_linear_87_8320" x1="7.36932" y1="30.1004"
+                                                x2="22.595" y2="17.8937" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#DE2453" />
+                                                <stop offset="1" stop-color="#FE3944" />
+                                            </lineargradient>
+                                            <lineargradient id="paint3_linear_87_8320" x1="8.10725" y1="1.90137"
+                                                x2="22.5971" y2="13.7365" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#11D574" />
+                                                <stop offset="1" stop-color="#01F176" />
+                                            </lineargradient>
+                                        </defs>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="right">
                     <h4>Contact</h4>
                     <ul>
                         <li><a href="https://goo.gl/maps/DNNPuk7GALebp4Hy7">Address</a></li>
-                        <li><a href="tel:+044 863 7598">Telephone</a></li>
+                        <li><a href="tel:+0448637598">Telephone</a></li>
                         <li><a href="mailto:Exploretheworld@gmail.com">Email</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
-       <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/app.js"></script>
 </body>
+
 </html>
