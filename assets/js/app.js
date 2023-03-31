@@ -34,11 +34,3 @@ closeRgs.addEventListener("click", () => {
 closeLgn.addEventListener("click", () => {
   loginForm.style.display = "none";
 });
-
-
-
-
-
-
-
- 

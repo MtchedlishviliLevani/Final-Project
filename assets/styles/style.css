@@ -368,15 +368,20 @@ header .navbar .menu .nav-link a:hover {
   flex-direction: column;
   position: relative;
   border-radius: var(--btn-brd-rad);
+  overflow: hidden;
 }
 
 .card > img {
-  width: 100%;
-  transition: filter 1s ease;
+  max-width: 100%;
+       transition: 2.8s;
+
 }
 
 .card:hover > img {
   filter: grayscale(100%);
+  transform: scale(1.4);
+  cursor: pointer;
+
 }
 
 .card-abs h2:before {
@@ -405,6 +410,23 @@ header .navbar .menu .nav-link a:hover {
   row-gap: 1.4rem;
   background-color: deepskyblue;
   color: var(--primary-color);
+  z-index: 998;
+}
+
+.book-prnt{
+  margin: auto;
+  display: block;
+  margin-top: 2rem;
+}
+
+
+.book-prnt button a{
+  color: var(--black-col);
+}
+
+.book-prnt button:hover a{
+  color: var(--primary-color);
+  transition: 1.2s;
 }
 
 .card-title,
@@ -422,6 +444,10 @@ header .navbar .menu .nav-link a:hover {
   font-size: 1.4rem;
 }
 
+.view-more-prnt{
+  margin: 5rem 0;
+}
+
 .view-more {
   background-image: linear-gradient(
     to right,
@@ -429,8 +455,7 @@ header .navbar .menu .nav-link a:hover {
     #79cbca 51%,
     #77a1d3 100%
   );
-  margin: 0 auto;
-  margin-top: 5rem;
+  margin:auto;
   display: block;
   border: none;
   border-radius: 0.4rem;
@@ -473,11 +498,17 @@ header .navbar .menu .nav-link a:hover {
   color: var(--primary-color);
 }
 
-.b-deal button {
+
+
+.book{
   border: none;
-  margin-top: 3rem;
   background: deepskyblue;
-  border-radius: 0.4rem;
+  border-radius: .4rem;
+}
+
+.b-deal .book {
+  margin-top: 3rem;
+  border-radius:0.4rem ;
 }
 
 .b-deal button:hover > a {
