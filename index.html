@@ -27,96 +27,97 @@
 </head>
 
 <body>
-    <section id="home">
-        <header>
-            <nav class="navbar container">
-                <a href="index.html"><img class="logo" src="./assets/images/Home/logo.png" alt="logo"></a>
-                <div class="action-items">
-                    <ul class="menu">
-                        <li class="nav-link"><a href="#home">Home</a></li>
-                        <li class="nav-link"><a href="#tours">Tours</a></li>
-                        <li class="nav-link"><a href="#service">Services</a></li>
-                        <li class="nav-link"><a href="#about">About</a></li>
-                    </ul>
-                    <div class="buttons-wrapper">
-                        <button type="button" class="btn lgn"><a href="#">Login</a></button>
-                        <button type="button" class="btn rgs"><a href="#">Register</a></button>
-                    </div>
-                </div>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </nav>
-        </header>
-        <div class="home container">
-            <div class="introduction">
-                <h1>”Life is short and the world is wide“</h1>
-                <button type="button" class="btn plan"><a href="#tours">Plan a trip</a></button>
-                <div class="search-inp">
-                    <form action="">
-                        <div class="sear-wrapper">
-                            <input type="search" id="search" placeholder="Where do you want to go?">
-
-                            <button type="submit" id="btn"><a href="#">Search</a></button>
-                        </div>
-                    </form>
-                </div>
-                <div class="registration-login-forms">
-                    <form class="login-form" action="">
-                        <div class="login-main">
-                            <svg class="close-lgn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path fill="#6563ff"
-                                    d="M7 18a1 1 0 0 1-.707-1.707l10-10a1 1 0 0 1 1.414 1.414l-10 10A.997.997 0 0 1 7 18Z">
-                                </path>
-                                <path fill="#6563ff"
-                                    d="M17 18a.997.997 0 0 1-.707-.293l-10-10a1 1 0 0 1 1.414-1.414l10 10A1 1 0 0 1 17 18Z">
-                                </path>
-                            </svg>
-                            <h3>Login</h3>
-                            <div class="email">
-                                <label for="Email">Email</label>
-                                <input type="text" placeholder="Type Your Email Address" name="Email" id="Email">
-                            </div>
-                            <div class="pass">
-                                <label for="password">Password</label>
-                                <input type="password" placeholder="Type Your Password" id="password">
-                            </div>
-                            <a class="frgt-pass" href="#">Forget password?</a>
-                            <button class="btn lgn-btn" type="submit">Login</button>
-                        </div>
-                    </form>
-                    <form class="register-form" action="">
-                        <div class="register-main">
-                            <svg class="close-rgs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path fill="#6563ff"
-                                    d="M7 18a1 1 0 0 1-.707-1.707l10-10a1 1 0 0 1 1.414 1.414l-10 10A.997.997 0 0 1 7 18Z">
-                                </path>
-                                <path fill="#6563ff"
-                                    d="M17 18a.997.997 0 0 1-.707-.293l-10-10a1 1 0 0 1 1.414-1.414l10 10A1 1 0 0 1 17 18Z">
-                                </path>
-                            </svg>
-                            <h3>Register</h3>
-                            <div class="fname">
-                                <label for="fname">Full Name</label>
-                                <input type="text" placeholder="Type Your Full Name" id="fname" name="fname">
-                            </div>
-                            <div class="email">
-                                <label for="email">Email</label>
-                                <input type="email" placeholder="Type Your Email Address" name="email" id="email">
-                            </div>
-                            <div class="creaPass">
-                                <label for="Password">Password</label>
-                                <input type="password" placeholder="Create Password" name="Password" id="Password">
-                            </div>
-                            <button type="submit" class="btn rgs-btn">Register</button>
-                        </div>
-                    </form>
+    <!-- <section id="home"> -->
+    <header>
+        <nav class="navbar container">
+            <a href="index.html"><img class="logo" src="./assets/images/Home/logo.png" alt="logo"></a>
+            <div class="action-items">
+                <ul class="menu">
+                    <li class="nav-link"><a class="link" href="#home">Home</a></li>
+                    <li class="nav-link"><a class="link" href="#tours">Tours</a></li>
+                    <li class="nav-link"><a class="link" href="#service">Services</a></li>
+                    <li class="nav-link"><a class="link" href="#about">About</a></li>
+                </ul>
+                <div class="buttons-wrapper">
+                    <button type="button" class="btn lgn link"><a href="#">Login</a></button>
+                    <button type="button" class="btn rgs link"><a href="#">Register</a></button>
                 </div>
             </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <div class="home container">
+        <div class="registration-login-forms">
+            <form class="login-form" action="">
+                <div class="login-main">
+                    <svg class="close-lgn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path fill="#6563ff"
+                            d="M7 18a1 1 0 0 1-.707-1.707l10-10a1 1 0 0 1 1.414 1.414l-10 10A.997.997 0 0 1 7 18Z">
+                        </path>
+                        <path fill="#6563ff"
+                            d="M17 18a.997.997 0 0 1-.707-.293l-10-10a1 1 0 0 1 1.414-1.414l10 10A1 1 0 0 1 17 18Z">
+                        </path>
+                    </svg>
+                    <h3>Login</h3>
+                    <div class="email">
+                        <label for="Email">Email</label>
+                        <input type="text" placeholder="Type Your Email Address" name="Email" id="Email">
+                    </div>
+                    <div class="pass">
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="Type Your Password" id="password">
+                    </div>
+                    <a class="frgt-pass" href="#">Forget password?</a>
+                    <button class="btn lgn-btn" type="submit">Login</button>
+                </div>
+            </form>
+            <form class="register-form" action="">
+                <div class="register-main">
+                    <svg class="close-rgs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path fill="#6563ff"
+                            d="M7 18a1 1 0 0 1-.707-1.707l10-10a1 1 0 0 1 1.414 1.414l-10 10A.997.997 0 0 1 7 18Z">
+                        </path>
+                        <path fill="#6563ff"
+                            d="M17 18a.997.997 0 0 1-.707-.293l-10-10a1 1 0 0 1 1.414-1.414l10 10A1 1 0 0 1 17 18Z">
+                        </path>
+                    </svg>
+                    <h3>Register</h3>
+                    <div class="fname">
+                        <label for="fname">Full Name</label>
+                        <input type="text" placeholder="Type Your Full Name" id="fname" name="fname">
+                    </div>
+                    <div class="email">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Type Your Email Address" name="email" id="email">
+                    </div>
+                    <div class="creaPass">
+                        <label for="Password">Password</label>
+                        <input type="password" placeholder="Create Password" name="Password" id="Password">
+                    </div>
+                    <button type="submit" class="btn rgs-btn">Register</button>
+                </div>
+            </form>
         </div>
-    </section>
+        <div class="introduction">
+            <h1>”Life is short and the world is wide“</h1>
+            <button type="button" class="btn plan"><a href="#tours">Plan a trip</a></button>
+            <div class="search-inp">
+                <form action="">
+                    <div class="sear-wrapper">
+                        <input type="search" id="search" placeholder="Where do you want to go?">
+
+                        <button type="submit" id="btn"><a href="#">Search</a></button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <!-- </section> -->
     <main>
         <section class="tours" id="tours">
             <div class="container">
@@ -202,15 +203,55 @@
                         </div>
                         <div class="book-prnt"> <button class="btn book"><a href="#">Buy Now</a> </button></div>
                     </div>
+                    <div class="card"><img src="./assets/images/Tours/socotra.png" alt="socotra">
+                        <div class="card-info">
+                            <div class="card-title">
+                                <h5>Tour length</h5>
+                                <h5>Price</h5>
+                            </div>
+                            <div class="card-text-cont"><span>5 days</span><span>2100$</span></div>
+                        </div>
+                        <div class="card-abs">
+                            <h2>Yemen</h2>
+                        </div>
+                        <div class="book-prnt"> <button class="btn book"><a href="#">Buy Now</a> </button></div>
+                    </div>
+                    <div class="card"><img src="./assets/images/Tours/mount-fuji.png" alt="Mount-fuji">
+                        <div class="card-info">
+                            <div class="card-title">
+                                <h5>Tour length</h5>
+                                <h5>Price</h5>
+                            </div>
+                            <div class="card-text-cont"><span>7 days</span><span>3500$</span></div>
+                        </div>
+                        <div class="card-abs">
+                            <h2>Japan</h2>
+                        </div>
+                        <div class="book-prnt"> <button class="btn book"><a href="#">Buy Now</a> </button></div>
+                    </div>
+                    <div class="card"><img src="./assets/images/Tours/Monteverde-Costa.png" alt="monteverde">
+                        <div class="card-info">
+                            <div class="card-title">
+                                <h5>Tour length</h5>
+                                <h5>Price</h5>
+                            </div>
+                            <div class="card-text-cont"><span>5 days</span><span>2800$</span></div>
+                        </div>
+                        <div class="card-abs">
+                            <h2>Costa Rica</h2>
+                        </div>
+                        <div class="book-prnt"> <button class="btn book"><a href="#">Buy Now</a> </button></div>
+                    </div>
+
                 </div>
                 <div class="view-more-prnt"> <button type="button" class="btn view-more"><a href="#">View
                             More</a></button></div>
             </div>
-            </div>
             <div class="b-deal">
                 <div class="deal-inner container">
-                    <h2>Deal Of The Month</h2><span>45% OFF Sale in Oberstdorf</span>
-                    <h3>Just hurry up limited offer!</h3>
+                    <h2>Deal Of The Month</h2>
+                    <h3>45% OFF Sale in Oberstdorf</h3>
+                    <h4>Just hurry up limited offer!</h4>
                     <button type="button" class="btn book"><a href="#">BooK Now</a></button>
                 </div>
             </div>
@@ -274,6 +315,73 @@
                         <button type="button" class="btn abt-btn"><a href="#">Learn more</a></button>
                     </div>
                 </div>
+                <div class="testimonial">
+                    <h2>Customer Reviews</h2>
+                    <div class="review">
+                        <div class="review-card">
+                            <div class="card-up"><img src="./assets/images/About/user1.jpg" alt="user-photo"></div>
+                            <div class="card-down">
+
+                                <h6>Emily Johnson</h6>
+                                <p> <span>&#8220;</span>
+                                    "I had an amazing experience with this travel agency. From the moment I reached out
+                                    to
+                                    them, they
+                                    were responsive and attentive to my needs. They helped me plan the perfect itinerary
+                                    for
+                                    my trip and
+                                    provided valuable insights about the destination. During my travels, everything went
+                                    smoothly thanks
+                                    to their meticulous planning. I highly recommend this agency to anyone looking for a
+                                    stress-free and
+                                    unforgettable vacation."</p>
+                            </div>
+                        </div>
+                        <div class="review-card">
+                            <div class="card-up"><img src="./assets/images/About/user2.png" alt="user-photo"></div>
+                            <div class="card-down">
+
+                                <h6>Alejandro Garnacho</h6>
+                                <p> <span>&#8220;</span>
+                                    "I've traveled with this agency multiple times and I'm always impressed with their
+                                    level
+                                    of service.
+                                    They go above and beyond to ensure that every aspect of my trip is taken care of,
+                                    from
+                                    transportation to accommodation and everything in between. Their knowledgeable staff
+                                    provides
+                                    valuable recommendations and insights that make my travels more enjoyable. I
+                                    wouldn't
+                                    trust anyone
+                                    else with planning my vacations!"</p>
+                            </div>
+                        </div>
+                        <div class="review-card card3">
+                            <div class="card-up"><img src="./assets/images/About/user3.png" alt="user-photo"></div>
+                            <div class="card-down">
+
+                                <h6>Marcus Rashford</h6>
+                                <p> <span>&#8220;</span>
+                                    "I couldn't have asked for a better travel experience than the one I had with this
+                                    agency. The team
+                                    was incredibly knowledgeable about the destination and provided great
+                                    recommendations
+                                    for activities
+                                    and local cuisine. They were also very responsive to my questions and concerns,
+                                    making
+                                    me feel
+                                    comfortable and at ease throughout the planning process. I had a fantastic trip and
+                                    would definitely
+                                    book with them again!"</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
         </section>
     </main>
     <footer>
