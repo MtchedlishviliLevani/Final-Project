@@ -32,13 +32,6 @@ html {
   --service-text-vr-photo-fm: "Kalam", cursive;
   --foter-bck-col: rgba(204, 113, 82, 1);
 }
-/* #home {
-  background-image: url(../images/Home/background.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100vh;
-} */
 
 .container {
   margin: 0 auto;
@@ -145,7 +138,6 @@ header .navbar .menu .nav-link a:hover {
 /* Home */
 
 .home {
-  /* height: 100vh; */
   position: relative;
   background-image: url(../images/Home/background.jpg);
   background-size: cover;
@@ -164,10 +156,10 @@ header .navbar .menu .nav-link a:hover {
   row-gap: 3rem;
   -webkit-animation-name: slideIn;
           animation-name: slideIn;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
   opacity: 0;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
@@ -211,27 +203,7 @@ header .navbar .menu .nav-link a:hover {
   color: var(--primary-color);
 }
 
-@-webkit-keyframes slideIn {
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(-50%, -50%);
-    opacity: 1;
-  }
-}
 
-@keyframes slideIn {
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(-50%, -50%);
-    opacity: 1;
-  }
-}
 
 .sear-wrapper {
   margin-top: 3.5rem;
@@ -341,16 +313,18 @@ header .navbar .menu .nav-link a:hover {
 }
 
 .registration-login-forms{
-
-  position: fixed; 
+display: none;
+  position: absolute; 
   z-index: 1; 
   left: 0;
   top: 0;
   width: 100%; 
   height: 100vh; 
   overflow: auto; 
-  /* background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.4);  */
+}
+
+.registration-login-forms.activedd{
+  display: block;
 }
 
 .login-main input::-webkit-input-placeholder, .register-main input::-webkit-input-placeholder {
@@ -566,7 +540,6 @@ header .navbar .menu .nav-link a:hover {
   font-family: var(--main-ff);
   font-size: var(--h2-fs);
   color: var(--primary-color);
-  /* padding-top: 3rem; */
   padding-top: 1.5rem;
   font-weight: 900;
   padding-bottom: 3rem;
@@ -663,7 +636,6 @@ header .navbar .menu .nav-link a:hover {
 
 .service p {
   font-family: var(--service-text-vr-photo-fm);
-  /* font-size: 2.4rem; */
   font-size: 1.6rem;
   position: absolute;
   top: 12%;
@@ -675,7 +647,7 @@ header .navbar .menu .nav-link a:hover {
   line-height: 2.8rem;
   opacity: 0;
   color: aliceblue;
-  text-align: center;transition: 1.5s;
+  text-align: center;transition: 1.2s;
 }
 
 
@@ -714,9 +686,7 @@ header .navbar .menu .nav-link a:hover {
 
 .about-text-content p {
   font-family: var(--main-ff);
-  /* font-size: 2.2rem; */
   font-size: 2.1rem;
-  /* line-height: 2.8rem; */
   line-height: 2.4rem;
   width: 70%;
   margin-bottom: 7rem;
@@ -898,7 +868,6 @@ footer {
 
 
 .review-card{box-shadow: rgba(0, 0, 0, 0.19) 0rem 1rem 2rem, rgba(0, 0, 0, 0.23) 0rem .6rem .6rem;
-  /* max-width: 40rem; */
   border-radius: 1.2rem;
   display: flex;
   flex-direction: column;
@@ -928,6 +897,31 @@ footer {
   font-family: var(--main-ff);
   line-height: 2.4rem;
 }
+
+/* ANIMATION */
+
+@-webkit-keyframes slideIn {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-50%, -50%);
+    opacity: 1;
+  }
+}
+
 
 @media screen and (max-width: 1200px) {
   /* Tours */
@@ -1219,6 +1213,14 @@ footer {
       font-size: 1.7rem;
     }
 
+    #btn{
+      padding: 0.5rem 2rem;
+    }
+
+    .login-main, .register-main{
+      max-width: 27rem;
+    }
+
     /* Tours */
 
     .b-deal h4 {
@@ -1247,4 +1249,11 @@ footer {
       display: none;
     }
   }
+}
+
+@media screen and (max-height:640px) {
+  .login-main, .register-main{
+    top:56%;
+  }
+  
 }

@@ -6,15 +6,9 @@ const registerForm = document.querySelector(".register-form");
 const loginForm = document.querySelector(".login-form");
 const closeRgs = document.querySelector(".close-rgs");
 const closeLgn = document.querySelector(".close-lgn");
-const link = document.querySelector(".link")[0];
+const links = document.querySelectorAll(".link");
 const modal = document.querySelector(".registration-login-forms");
 
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
 
 // Hamburger
 hamburger.addEventListener("click", () => {
@@ -22,13 +16,11 @@ hamburger.addEventListener("click", () => {
   actionItems.classList.toggle("active");
 });
 
-
-document.querySelectorAll(".link").forEach(n => n.addEventListener("click", () => {
-  hamburger.classList.remove("active");
-  actionItems.classList.remove("active");
-}));
-
-
+links.forEach(n =>n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    actionItems.classList.remove("active");
+  })
+);
 
 
 // clicking on registration and loggin buttons show forms
@@ -53,3 +45,22 @@ closeLgn.addEventListener("click", () => {
   loginForm.style.display = "none";
 });
 
+
+
+// hidden login and registration box when i click anywhere
+
+
+loginBtn.addEventListener("click", () =>{
+  modal.classList.add("activedd");
+})
+
+registerBtn.addEventListener("click", () =>{
+  modal.classList.add("activedd");
+})
+
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.classList.remove("activedd")
+  }
+};
